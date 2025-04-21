@@ -6,20 +6,12 @@
   display: none;
 }
 
-/* #menu_bar_on {
-  display: none;
-}
-
-#menu_bar_off {
-  display: none;
-} */
-
 nav {
   background: linear-gradient(
-    50.37deg,
-    #82d3ff 2.715%,
-    #afeff7 49.309%,
-    #61adf8 97.804%
+    75deg,
+    #82d3ff -36.815%,
+    #b6f8ff 25.309%,
+    #61adf8 95.900%
   );
 }
 
