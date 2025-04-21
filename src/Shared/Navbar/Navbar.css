@@ -1,5 +1,26 @@
+.navbar_mobile_routes_container {
+  display: none;
+}
+
+#menu_container {
+  display: none;
+}
+
+/* #menu_bar_on {
+  display: none;
+}
+
+#menu_bar_off {
+  display: none;
+} */
+
 nav {
-  background: linear-gradient(50.37deg, #82d3ff 2.715%,#afeff7 49.309%,#61adf8 97.804%);
+  background: linear-gradient(
+    50.37deg,
+    #82d3ff 2.715%,
+    #afeff7 49.309%,
+    #61adf8 97.804%
+  );
 }
 
 .main_navbar_container {
@@ -34,7 +55,7 @@ nav {
 }
 
 .navbar_routes_container ul li:hover {
-  color: #0071FF;
+  color: #0071ff;
   cursor: pointer;
 }
 
@@ -61,4 +82,117 @@ nav {
   right: 15px;
   cursor: pointer;
   font-size: 22px;
+}
+
+/* Responsive style__ */
+
+@media screen and (max-width: 1536px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar_logo_container h1 {
+    font-size: 1.8rem;
+  }
+
+  .navbar_routes_container ul {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .navbar_search_container input {
+    width: 200px;
+    padding: 8px 40px 8px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+
+  #desktop_routes {
+    display: none;
+  }
+
+  .navbar_mobile_routes_container {
+    display: block;
+  }
+
+  #menu_container {
+    display: block;
+  }
+
+  #menu_bar_on {
+    font-size: 1.4rem;
+  }
+
+  #menu_bar_off {
+    font-size: 1.4rem;
+  }
+
+  /* Mobile bar style__ */
+
+  .navbar_mobile_routes_container {
+    position: absolute;
+    right: 0px;
+    top: 82px;
+    background: linear-gradient(
+      50.37deg,
+      #82d3ff 2.715%,
+      #afeff7 49.309%,
+      #61adf8 97.804%
+    );
+    height: calc(100vh - 82px);
+    width: 50%;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed black;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar_mobile_routes_container ul li {
+    padding-bottom: 20px;
+  }
+
+  #active_mobile_routes {
+    right: -500px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 475px) {
+  .navbar_logo_container h1 {
+    font-size: 1.3rem;
+  }
+
+  .navbar_search_container input {
+    width: 130px;
+    font-size: 16px;
+    padding: 5px 25px 5px 10px;
+  }
+
+  .navbar_search_container span {
+    font-size: 16px;
+    right: 8px;
+  }
+
+  #menu_bar_on {
+    font-size: 1.2rem;
+  }
+
+  #menu_bar_off {
+    font-size: 1.2rem;
+  }
+
+  .navbar_mobile_routes_container {
+    top: 74px;
+    font-size: 1rem;
+    height: calc(100vh - 74px);
+  }
 }
