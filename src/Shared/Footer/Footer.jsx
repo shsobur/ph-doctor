@@ -14,6 +14,7 @@ const Footer = () => {
       <footer>
         <div className="main_footer_section_outer_container">
           <div className="main_footer_section_inner_container">
+            
             <div className="footer_content_top_container">
               <div id="footer_box-1" className="main_footer_title_container">
                 <div className="footer_main_title_container">
@@ -93,6 +94,7 @@ const Footer = () => {
                 Terms Of Use <span className="pl-5 pr-5">|</span> Privacy Policy
               </div>
             </div>
+
           </div>
         </div>
       </footer>
