@@ -1,65 +1,101 @@
-import { useState } from "react";
 import "./Navbar.css";
-import { FaBars } from "react-icons/fa";
+import { useState } from "react";
+import { ImCross } from "react-icons/im";
+import { TiThMenu } from "react-icons/ti";
 import { GiGloves } from "react-icons/gi";
-import { IoSearchOutline } from "react-icons/io5";
-import { RxCross1, RxCross2 } from "react-icons/rx";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(false);
+  const [burgerMenu, setBurgerMenu] = useState(false);
 
   return (
     <>
       <nav>
-        <div className="main_navbar_container">
-          <div className="navbar_logo_container">
-            <h1>
-              <span>
+        <div className="main_nav_parent_container">
+          <nav className="nav_container">
+            <div className="web_name">
+              <h2>
                 <GiGloves />
-              </span>
-              PH Doctor
-            </h1>
-          </div>
+                PH Doctor
+              </h2>
+            </div>
 
-          <div id="desktop_routes" className="navbar_routes_container">
-            <ul>
-              <li>Home</li>
-              <li>My-Bookings</li>
-              <li>Blogs</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
+            <div
+              id="main_nav_navigate_container"
+              className={
+                burgerMenu
+                  ? "#main_nav_navigate_container isActive"
+                  : "#main_nav_navigate_container"
+              }
+            >
+              <ul onClick={() => setBurgerMenu(!burgerMenu)}>
+                <li>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive ? "text-[#0071FF]" : ""
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </li>
 
-          <div
-            id={!menu ? "active_mobile_routes" : ""}
-            className="navbar_mobile_routes_container"
-          >
-            <ul>
-              <li>Home</li>
-              <li>My-Bookings</li>
-              <li>Blogs</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
+                <li>
+                  <NavLink
+                    to="/bookings"
+                    className={({ isActive }) =>
+                      isActive ? "text-[#0071FF]" : ""
+                    }
+                  >
+                    My-Bookings
+                  </NavLink>
+                </li>
 
-          <div className="navbar_search_container">
-            <input type="text" placeholder="Search here" />
-            <span>
-              <IoSearchOutline />
-            </span>
-          </div>
+                <li>
+                  <NavLink
+                    to="/blogs"
+                    className={({ isActive }) =>
+                      isActive ? "text-[#0071FF]" : ""
+                    }
+                  >
+                    Blogs
+                  </NavLink>
+                </li>
 
-          <button id="menu_container" onClick={() => setMenu(!menu)}>
-            {menu ? (
-              <h3 id="menu_bar_off">
-                <RxCross1 />
-              </h3>
-            ) : (
-              <h3 id="menu_bar_on">
-                <FaBars />
-              </h3>
-            )}
-          </button>
+                <li>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      isActive ? "text-[#0071FF]" : ""
+                    }
+                  >
+                    Contact Us
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+
+            <div className="nav_signin_container">
+              <Link to="/">
+                <button>SING IN</button>
+              </Link>
+            </div>
+
+            <div
+              onClick={() => setBurgerMenu(!burgerMenu)}
+              className="burger_menu_container"
+            >
+              {burgerMenu ? (
+                <div>
+                  <TiThMenu />
+                </div>
+              ) : (
+                <div>
+                  <ImCross />
+                </div>
+              )}
+            </div>
+          </nav>
         </div>
       </nav>
     </>

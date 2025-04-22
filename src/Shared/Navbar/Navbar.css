@@ -1,190 +1,111 @@
-.navbar_mobile_routes_container {
-  display: none;
-}
-
-#menu_container {
-  display: none;
-}
-
-nav {
+.main_nav_parent_container {
+  height: 70px;
+  width: 100%;
   background: linear-gradient(
-    75deg,
-    #82d3ff -36.815%,
-    #b6f8ff 25.309%,
-    #61adf8 95.900%
+    40deg,
+    #82d3ff 2.715%,
+    #b6f8ff 49.309%,
+    #61adf8 97.804%
   );
+  border-bottom: 1px dashed #ffffff;
 }
 
-.main_navbar_container {
+.nav_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1535px;
-  padding: 20px 10px;
-  margin: auto;
-  color: #214169;
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
 }
 
-/* Logo style__ */
-
-.navbar_logo_container h1 {
+.web_name h2 {
   gap: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #214169;
 }
 
-/* Routes style__ */
-
-.navbar_routes_container ul {
-  gap: 50px;
+#main_nav_navigate_container ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  color: #214169;
+}
+
+#main_nav_navigate_container ul li {
   font-size: 18px;
+  font-weight: 500;
 }
 
-.navbar_routes_container ul li:hover {
-  color: #0071ff;
-  cursor: pointer;
-}
-
-/* Search style__ */
-
-.navbar_search_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.navbar_search_container input {
-  padding: 10px 50px 10px 20px;
-  width: 300px;
-  outline: none;
+.nav_signin_container button {
+  padding: 5px 20px;
+  font-size: 16px;
   border-radius: 8px;
-  background-color: #f1f0f0;
+  color: #ffffff;
+  background-color: #214169;
 }
 
-.navbar_search_container span {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
-  font-size: 22px;
+.burger_menu_container {
+  font-size: 1.5rem;
+  display: none;
+  color: #214169;
 }
 
 /* Responsive style__ */
 
-@media screen and (max-width: 1536px) {
-}
-
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 1024px) {
-  .navbar_logo_container h1 {
-    font-size: 1.8rem;
-  }
-
-  .navbar_routes_container ul {
-    gap: 20px;
-    font-size: 16px;
-  }
-
-  .navbar_search_container input {
-    width: 200px;
-    padding: 8px 40px 8px 15px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  nav {
-    position: relative;
-  }
-
-  #desktop_routes {
-    display: none;
-  }
-
-  .navbar_mobile_routes_container {
-    display: block;
-  }
-
-  #menu_container {
-    display: block;
-  }
-
-  #menu_bar_on {
-    font-size: 1.4rem;
-  }
-
-  #menu_bar_off {
-    font-size: 1.4rem;
-  }
-
-  /* Mobile bar style__ */
-
-  .navbar_mobile_routes_container {
-    position: absolute;
-    right: 0px;
-    top: 82px;
-    background: linear-gradient(
-      50.37deg,
-      #82d3ff 2.715%,
-      #afeff7 49.309%,
-      #61adf8 97.804%
-    );
-    height: calc(100vh - 82px);
-    width: 50%;
-    font-size: 1.3rem;
-    padding-left: 10px;
-    padding-top: 10px;
-    border-top: 1px dashed black;
-    transition: 0.3s ease-in-out;
-  }
-
-  .navbar_mobile_routes_container ul li {
-    padding-bottom: 20px;
-  }
-
-  #active_mobile_routes {
-    right: -500px;
+  #main_nav_navigate_container ul {
+    gap: 20px;
   }
 }
 
 @media screen and (max-width: 640px) {
+  .burger_menu_container {
+    display: block;
+  }
+
+  #main_nav_navigate_container ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    height: calc(100vh - 70px);
+    width: 50%;
+    padding: 10px 20px;
+    top: 70px;
+    right: 0px;
+    background-color: #5f92cc;
+    transition: 0.4s ease-in-out;
+  }
+
+  #main_nav_navigate_container.isActive ul {
+    right: -500px;
+  }
+
+  .nav_signin_container {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  .web_name h2 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 475px) {
-  .navbar_logo_container h1 {
-    font-size: 1.3rem;
+  .web_name h2 {
+    font-size: 1.5rem;
   }
 
-  .navbar_search_container input {
-    width: 130px;
-    font-size: 16px;
-    padding: 5px 25px 5px 10px;
-  }
-
-  .navbar_search_container span {
-    font-size: 16px;
-    right: 8px;
-  }
-
-  #menu_bar_on {
-    font-size: 1.2rem;
-  }
-
-  #menu_bar_off {
-    font-size: 1.2rem;
-  }
-
-  .navbar_mobile_routes_container {
-    top: 74px;
-    font-size: 1rem;
-    height: calc(100vh - 74px);
+  .nav_signin_container button {
+    padding: 5px 15px;
+    font-size: 14px;
   }
 }
