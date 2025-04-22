@@ -1,8 +1,7 @@
 .main_nav_parent_container {
   height: 70px;
-  width: 100%;
   background: linear-gradient(
-    40deg,
+    180deg,
     #82d3ff 2.715%,
     #b6f8ff 49.309%,
     #61adf8 97.804%
@@ -15,7 +14,8 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
+  max-width: 1536px;
+  margin: auto;
   padding: 0 10px;
 }
 

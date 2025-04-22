@@ -10,7 +10,6 @@ const Navbar = () => {
 
   return (
     <>
-      <nav>
         <div className="main_nav_parent_container">
           <nav className="nav_container">
             <div className="web_name">
@@ -97,7 +96,6 @@ const Navbar = () => {
             </div>
           </nav>
         </div>
-      </nav>
     </>
   );
 };
