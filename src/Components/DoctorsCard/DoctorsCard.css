@@ -1,5 +1,5 @@
 .main_doctor_card_container {
-  max-width: 400px;
+  max-width: 420px;
   padding: 20px;
   border-radius: 8px;
   background-color: #ffffff;
@@ -27,7 +27,7 @@
 }
 
 .doctor_service_info li:nth-child(1) {
-  color: #09982F;
+  color: #09982f;
   padding: 2px 20px;
   border-radius: 99px;
   background: #09982f1a;
@@ -35,7 +35,7 @@
 }
 
 .doctor_service_info li:nth-child(2) {
-  color: #176AE5;
+  color: #176ae5;
   padding: 2px 20px;
   border-radius: 99px;
   background: #176ae51a;
@@ -48,18 +48,18 @@
 }
 
 .doctor_card_info_container p {
-  color: #0F0F0F99;
+  color: #0f0f0f99;
   font-size: 1.2rem;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px dashed #0F0F0F33;
+  border-bottom: 2px dashed #0f0f0f33;
 }
 
 .doctor_reg_info {
   gap: 10px;
   font-size: 18px;
   margin-bottom: 10px;
-  color: #0F0F0FB3;
+  color: #0f0f0fb3;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -71,11 +71,106 @@
   padding: 5px 0;
   font-size: 18px;
   font-weight: 600;
-  color: #176AE5;
+  color: #176ae5;
   cursor: pointer;
   border: 1px solid #176ae5;
 }
 
 .doctor_card_button:hover {
   background-color: #f7f5f5;
+}
+
+/* Responsive style__ */
+
+@media screen and (max-width: 1280px) {
+  .doctor_service_info {
+    gap: 10px;
+  }
+
+  .doctor_service_info li:nth-child(1) {
+    padding: 2px 15px;
+    font-size: 14px;
+  }
+
+  .doctor_service_info li:nth-child(2) {
+    padding: 2px 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .doctor_service_info {
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .doctor_card_info_container h1 {
+    font-size: 1.2rem;
+  }
+
+  .doctor_card_info_container p {
+    font-size: 1rem;
+  }
+
+  .doctor_card_button {
+    padding: 2px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doctor_service_info {
+    flex-direction: row;
+  }
+
+  .doctor_card_info_container h1 {
+    font-size: 1.5rem;
+  }
+
+  .doctor_card_info_container p {
+    font-size: 1.2rem;
+  }
+
+  .doctor_card_button {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .doctor_service_info {
+    flex-direction: column;
+  }
+
+  .doctor_card_info_container h1 {
+    font-size: 1.2rem;
+  }
+
+  .doctor_card_info_container p {
+    font-size: 1rem;
+  }
+
+  .doctor_reg_info {
+    font-size: 16px;
+  }
+
+  .doctor_card_button {
+    padding: 2px 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .doctor_service_info {
+    flex-direction: row;
+  }
+
+  .doctor_service_info li:nth-child(1) {
+    padding: 2px 13px;
+  }
+
+  .doctor_service_info li:nth-child(2) {
+    padding: 2px 13px;
+  }
 }

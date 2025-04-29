@@ -34,9 +34,16 @@ const Doctors = () => {
             ))}
           </div>
 
-          <div className="doctors_section_button">
+          <div
+            className={
+              displayCards === doctors?.length
+                ? "doctor_button_close"
+                : "doctors_section_button "
+            }
+          >
             <button onClick={handleCards}>View All Doctors</button>
           </div>
+
         </div>
       </section>
     </>

@@ -6,6 +6,7 @@
 .main_doctors_section_container {
   max-width: 1536px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .doctors_section_title {
@@ -18,7 +19,7 @@
 .doctors_section_sub_title {
   text-align: center;
   color: #525252;
-  padding: 0 300px;
+  padding: 0 200px;
 }
 
 .main_doctors_card_container {
@@ -42,9 +43,77 @@
   padding: 8px 20px;
   color: #ffffff;
   cursor: pointer;
-  background-color: #176AE5;
+  background-color: #176ae5;
+}
+
+.doctor_button_close {
+  display: none;
 }
 
 .doctors_section_button button:hover {
   background-color: #1561d3;
+}
+
+/* Responsive style__ */
+@media screen and (max-width: 1280px) {
+  .doctors_section_sub_title {
+    padding: 0 100px;
+  }
+
+  .main_doctors_card_container {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .doctors_section_title {
+    font-size: 3rem;
+  }
+
+  .doctors_section_sub_title {
+    padding: 0 50px;
+  }
+
+  .main_doctors_card_container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doctors_section_title {
+    font-size: 2.5rem;
+  }
+
+  .doctors_section_sub_title {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .main_doctors_card_container {
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .doctors_section_title {
+    font-size: 2.3rem;
+  }
+
+  .doctors_section_sub_title {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .doctors_section_sub_title {
+    font-size: 12px;
+  }
+
+  .main_doctors_card_container {
+    margin-top: 50px;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
