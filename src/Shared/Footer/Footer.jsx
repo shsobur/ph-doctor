@@ -89,7 +89,7 @@ const Footer = () => {
             </div>
 
             <div className="footer_bottam_container">
-              <div>© Copyright Medih {currentYear} All Right Reserved.</div>
+              <div>© Copyright PH Doctor {currentYear} All Right Reserved.</div>
               <div>
                 Terms Of Use <span className="pl-5 pr-5">|</span> Privacy Policy
               </div>

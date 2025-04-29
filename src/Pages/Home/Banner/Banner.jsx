@@ -1,5 +1,5 @@
 import "./Banner.css";
-import bannerImage from "../../assets/banner-image.png";
+import bannerImage from "../../../assets/banner-image.png";
 
 const Banner = () => {
   return (

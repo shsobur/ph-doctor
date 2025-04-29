@@ -1,0 +1,50 @@
+#doctors_container {
+  padding: 100px 0;
+  background-color: #efefef;
+}
+
+.main_doctors_section_container {
+  max-width: 1536px;
+  margin: auto;
+}
+
+.doctors_section_title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.doctors_section_sub_title {
+  text-align: center;
+  color: #525252;
+  padding: 0 300px;
+}
+
+.main_doctors_card_container {
+  margin-top: 100px;
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.doctors_section_button {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctors_section_button button {
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #176AE5;
+}
+
+.doctors_section_button button:hover {
+  background-color: #1561d3;
+}
