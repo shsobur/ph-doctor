@@ -1,0 +1,161 @@
+#details_container {
+  padding: 100px 0;
+  background-color: #efefef;
+}
+
+.main_details_container {
+  max-width: 1536px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.doctor_details_container {
+  padding: 100px;
+  border-radius: 24px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.doctor_details_container h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-size: 600;
+}
+
+.doctor_details_container h2 {
+  font-size: 18px;
+  padding: 0 100px;
+  color: #707070;
+}
+
+/* Doctor info__ */
+
+.doctor_info_container {
+  gap: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 100px;
+  padding: 50px;
+  border-radius: 24px;
+  background-color: #ffffff;
+}
+
+/* Image container__ */
+
+.doctor_details_image_container {
+  width: 30%;
+}
+
+.doctor_details_image_container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Doctor info content */
+
+.about_doctor_container {
+  width: 80%;
+}
+
+.doctor_name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.doctor_degree {
+  font-size: 18px;
+  color: #0F0F0F99;
+  margin-bottom: 10px;
+}
+
+.doctor_work_place li:nth-child(1) {
+  font-size: 20px;
+  color: #0F0F0F80;
+  margin-bottom: 10px;
+}
+
+.doctor_work_place li:nth-child(2) {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #0F0F0F33;
+}
+
+.doctor_reg_number {
+  font-size: 1.4rem;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #0F0F0FB3;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #0F0F0F33;
+}
+
+.doctor_available_day {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.doctor_available_day li:nth-child(2) {
+  color: #FFA000;
+  padding: 5px 20px;
+  border-radius: 99px;
+  background: #ffa0001a;
+  border: 1px solid #ffa00033;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.doctor_available_day li:nth-child(3) {
+  color: #FFA000;
+  padding: 5px 20px;
+  border-radius: 99px;
+  background: #ffa0001a;
+  border: 1px solid #ffa00033;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.doctor_available_day li:nth-child(4) {
+  color: #FFA000;
+  padding: 5px 20px;
+  border-radius: 99px;
+  background: #ffa0001a;
+  border: 1px solid #ffa00033;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.doctor_fee {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+.doctor_fee li:nth-child(1) {
+  font-weight: 500;
+}
+
+.doctor_fee li:nth-child(2) {
+  color: #176AE5;
+}
+
+.doctor_fee li:nth-child(3) {
+  color: #14141480;
+}
+
+.doctor_fee li:nth-child(4) {
+  color: #176AE5;
+}

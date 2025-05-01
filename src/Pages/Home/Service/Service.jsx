@@ -1,9 +1,13 @@
-import { LuClipboardPenLine } from "react-icons/lu";
 import "./Service.css";
 import { TbStars } from "react-icons/tb";
+import { LuClipboardPenLine } from "react-icons/lu";
 import { FaPeopleRobbery, FaPeopleRoof } from "react-icons/fa6";
+import { useInView } from "react-intersection-observer";
+import CountUp from "react-countup";
 
 const Service = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   return (
     <>
       <section id="main_service_container">
@@ -17,35 +21,37 @@ const Service = () => {
           </p>
 
           <div className="service_section_info_container">
-            <div className="service_card">
+            <div ref={ref} className="service_card">
               <h4>
                 <LuClipboardPenLine />
               </h4>
-              <h2>199+</h2>
+              <h2>{inView && <CountUp start={0} end={150} duration={5} />}+</h2>
               <p>Total Doctors</p>
             </div>
 
-            <div className="service_card">
+            <div ref={ref} className="service_card">
               <h4>
                 <TbStars />
               </h4>
-              <h2>467+</h2>
+              <h2>{inView && <CountUp start={0} end={467} duration={5} />}+</h2>
               <p>Total Reviews</p>
             </div>
 
-            <div className="service_card">
+            <div ref={ref} className="service_card">
               <h4>
                 <FaPeopleRoof />
               </h4>
-              <h2>1900+</h2>
+              <h2>
+                {inView && <CountUp start={0} end={1900} duration={5} />}+
+              </h2>
               <p>Total Reviews</p>
             </div>
 
-            <div className="service_card">
+            <div ref={ref} className="service_card">
               <h4>
                 <FaPeopleRobbery />
               </h4>
-              <h2>300+</h2>
+              <h2>{inView && <CountUp start={0} end={300} duration={5} />}+</h2>
               <p>Total Stuffs</p>
             </div>
           </div>

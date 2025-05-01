@@ -9,7 +9,8 @@
     "registration_number": "REG123456",
     "designation": "Experienced Cardiologist focusing on complex heart diseases, preventive cardiology, and heart health education. Dedicated to improving patient outcomes through modern techniques.",
     "workplace": "City Heart Hospital",
-    "fee": "$100"
+    "fee": "1000",
+    "availability": ["Sunday", "Monday", "Thursday"]
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "registration_number": "REG123457",
     "designation": "Skilled Orthopedic Surgeon specializing in joint replacement, trauma surgery, and sports injuries. Committed to restoring mobility and enhancing quality of life.",
     "workplace": "Sunrise Orthopedic Center",
-    "fee": "$120"
+    "fee": "1200",
+    "availability": ["Sunday", "Monday", "Thursday"]
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "registration_number": "REG123458",
     "designation": "Dental expert with a passion for cosmetic dentistry, prosthodontics, and full mouth rehabilitation. Focused on creating beautiful, healthy smiles for all patients.",
     "workplace": "Smile Dental Care",
-    "fee": "$80"
+    "fee": "800",
+    "availability": ["Tuesday", "Friday", "Saturday"]
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "registration_number": "REG123459",
     "designation": "Dedicated Pediatrician providing comprehensive care to infants, children, and adolescents. Focused on growth, development, and preventive healthcare for young patients.",
     "workplace": "Happy Kids Clinic",
-    "fee": "$90"
+    "fee": "900",
+    "availability": ["Monday", "Wednesday", "Sunday"]
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "registration_number": "REG123460",
     "designation": "Dermatologist with expertise in treating skin diseases, cosmetic procedures, and skin rejuvenation. Committed to healthy skin solutions for all age groups.",
     "workplace": "Glow Skin Clinic",
-    "fee": "$95"
+    "fee": "950",
+    "availability": ["Thursday", "Saturday", "Tuesday"]
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "registration_number": "REG123461",
     "designation": "ENT Specialist managing ear, nose, throat, and head & neck disorders. Dedicated to providing quality surgical and non-surgical treatments to patients of all ages.",
     "workplace": "Clear Hearing & ENT Care",
-    "fee": "$85"
+    "fee": "805",
+    "availability": ["Wednesday", "Friday", "Monday"]
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "registration_number": "REG123462",
     "designation": "Experienced Neurologist with focus on neurological disorders like epilepsy, stroke, and Parkinson’s disease. Committed to comprehensive brain and nerve care for patients.",
     "workplace": "Neuro Life Clinic",
-    "fee": "$150"
+    "fee": "1500",
+    "availability": ["Sunday", "Tuesday", "Thursday"]
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "registration_number": "REG123463",
     "designation": "General Surgeon skilled in laparoscopic, gastrointestinal, and hernia surgeries. Dedicated to minimally invasive procedures ensuring faster recovery and better patient outcomes.",
     "workplace": "Metro Surgical Center",
-    "fee": "$140"
+    "fee": "1400",
+    "availability": ["Friday", "Wednesday", "Saturday"]
   },
   {
     "id": 9,
@@ -105,7 +113,8 @@
     "registration_number": "REG123464",
     "designation": "Eye Specialist providing treatments for cataract, glaucoma, and refractive errors. Focused on advanced surgical techniques and personalized eye care solutions.",
     "workplace": "Vision Eye Hospital",
-    "fee": "$110"
+    "fee": "1100",
+    "availability": ["Monday", "Thursday", "Sunday"]
   },
   {
     "id": 10,
@@ -117,7 +126,8 @@
     "registration_number": "REG123465",
     "designation": "Psychiatrist offering care for depression, anxiety, bipolar disorder, and emotional wellness. Strong focus on personalized therapy and medication management strategies.",
     "workplace": "MindCare Wellness Center",
-    "fee": "$130"
+    "fee": "1300",
+    "availability": ["Tuesday", "Friday", "Wednesday"]
   },
   {
     "id": 11,
@@ -129,7 +139,8 @@
     "registration_number": "REG123466",
     "designation": "Experienced Gynecologist specializing in pregnancy care, fertility treatments, and women’s health issues. Dedicated to providing compassionate and expert healthcare for women.",
     "workplace": "Women’s Health Hospital",
-    "fee": "$125"
+    "fee": "1250",
+    "availability": ["Saturday", "Monday", "Thursday"]
   },
   {
     "id": 12,
@@ -141,6 +152,7 @@
     "registration_number": "REG123467",
     "designation": "Oncologist with expertise in diagnosing and treating various types of cancer. Committed to delivering compassionate care and the latest cancer treatment options.",
     "workplace": "Hope Cancer Center",
-    "fee": "$200"
+    "fee": "2000",
+    "availability": ["Wednesday", "Sunday", "Friday"]
   }
 ]
