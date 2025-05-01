@@ -13,7 +13,12 @@
   padding: 100px;
   border-radius: 24px;
   text-align: center;
-  background-color: #ffffff;
+  background: linear-gradient(
+    30deg,
+    #82d3ff 2.715%,
+    #b6f8ff 49.309%,
+    #61adf8 97.804%
+  );
 }
 
 .doctor_details_container h1 {
