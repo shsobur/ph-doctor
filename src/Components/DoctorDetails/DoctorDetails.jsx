@@ -1,6 +1,7 @@
 import "./DoctorDetails.css";
 import { LiaRegistered } from "react-icons/lia";
 import { useLoaderData, useParams } from "react-router";
+import { handleBooking } from "../Booking/Booking";
 
 const DoctorDetails = () => {
   // Handling doctor data__
@@ -8,6 +9,17 @@ const DoctorDetails = () => {
   const { id } = useParams();
   const intId = Number(id);
   const data = doctorData.find((doctor) => doctor.id === intId);
+
+  const handleDoctorBookings = () => {
+    const bookedDoctorData = {
+      id: data.id,
+      fee: data.fee,
+      name: data.name,
+      education: data.education,
+    };
+
+    handleBooking(bookedDoctorData);
+  };
 
   return (
     <>
@@ -55,6 +67,17 @@ const DoctorDetails = () => {
                 <li> Per consultation</li>
               </ul>
             </div>
+          </div>
+
+          <div className="doctor_booking_container">
+            <h1>Book an Appointment</h1>
+
+            <ul>
+              <li>Availability</li>
+              <li>Doctor Available Today</li>
+            </ul>
+
+            <button onClick={handleDoctorBookings}>Book Appointment Now</button>
           </div>
         </div>
       </section>
