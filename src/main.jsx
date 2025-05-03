@@ -6,6 +6,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import DoctorDetails from "./Components/DoctorDetails/DoctorDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePageLayout from "./Pages/Home/HomePageLayout/HomePageLayout";
+import BookingPageLayout from "./Pages/Bookings/BookingPageLayout/BookingPageLayout";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         Component: HomePageLayout,
+      },
+      {
+        path: "/bookings",
+        Component: BookingPageLayout,
       },
       {
         path: "/doctorDetails/:id",

@@ -1,0 +1,65 @@
+#booking_section {
+  padding: 100px 0;
+  background-color: #efefef;
+}
+
+.main_booking_container {
+  max-width: 1536px;
+  margin: auto;
+}
+
+.main_booking_container h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.main_booking_container h2 {
+  text-align: center;
+  color: #2c2c2c;
+  margin-bottom: 50px;
+}
+
+.booking_container {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.booking_container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.booking_container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #0F0F0F99;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #7e7d7d99;
+}
+
+.booking_container button {
+  width: 100%;
+  padding: 10px 0;
+  color: #FF0000;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 99px;
+  border: 1px solid #ff0000;
+}
+
+.booking_container button:hover {
+  background-color: #f8f8f8;
+}
+
+/* Massage__ */
+
+.empty_booking_massage {
+  text-align: center;
+  font-size: 3rem;
+}
