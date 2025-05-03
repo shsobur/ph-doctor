@@ -41,7 +41,7 @@ const AllBooking = () => {
   return (
     <>
       <section id="booking_section">
-        {bookingData.length === 0 ? (
+        {bookingData === null ? (
           <div className="empty_booking_massage">
             <h1>No Booking!</h1>
           </div>
@@ -69,9 +69,11 @@ const AllBooking = () => {
                   shape={<TriangleBar />}
                   label={{ position: "top" }}
                 >
-                  {bookingData.map((entry, index) => (
+                  {
+                  bookingData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-                  ))}
+                  ))
+                  }
                 </Bar>
               </BarChart>
             </div>
@@ -83,7 +85,8 @@ const AllBooking = () => {
                 across various specialties — all at your convenience.
               </h2>
 
-              {bookingData.map((booking) => (
+              { 
+              bookingData.map((booking) => (
                 <div key={booking.id} className="booking_container">
                   <h3>{booking.name}</h3>
                   <ul>
