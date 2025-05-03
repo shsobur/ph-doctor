@@ -1,9 +1,13 @@
+import { handleDeleteBooking } from "../../../Components/Booking/Booking";
 import "./AllBooking.css";
 
 const AllBooking = () => {
   const bookingStr = localStorage.getItem("bookings");
   const bookingData = JSON.parse(bookingStr);
-  console.log(bookingData);
+
+  const handleCancelBooking = (id) => {
+    handleDeleteBooking(id);
+  }
 
   return (
     <>
@@ -27,7 +31,7 @@ const AllBooking = () => {
                   <li>{booking.education}</li>
                   <li>Appointment Fee : {booking.fee} Taka + Vat</li>
                 </ul>
-                <button>Cancel Appointment</button>
+                <button onClick={() => handleCancelBooking(booking.id)}>Cancel Appointment</button>
               </div>
             ))}
           </div>

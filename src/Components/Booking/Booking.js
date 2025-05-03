@@ -41,6 +41,7 @@ const handleBooking = (bookingDoctorData) => {
   bookingData.push(bookingDoctorData);
   const data = JSON.stringify(bookingData);
   localStorage.setItem("bookings", data);
+
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
@@ -58,4 +59,14 @@ const handleBooking = (bookingDoctorData) => {
   });
 };
 
-export { handleBooking };
+const handleDeleteBooking = (id) => {
+  const bookingsStr = localStorage.getItem("bookings");
+  const bookings = JSON.parse(bookingsStr);
+
+  const remainingBooking = bookings.filter(booking => booking.id !== id);
+  const data = JSON.stringify(remainingBooking);
+  localStorage.setItem("bookings", data);
+  window.location.reload();
+}
+
+export { handleBooking, handleDeleteBooking };
