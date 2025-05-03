@@ -3,6 +3,20 @@
   background-color: #efefef;
 }
 
+/* Chart__ */
+
+.main_chart_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1536px;
+  margin: auto;
+  padding: 0 10px;
+  margin-bottom: 100px;
+}
+
+/* Booking__ */
+
 .main_booking_container {
   max-width: 1536px;
   margin: auto;
@@ -37,7 +51,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
-  color: #0F0F0F99;
+  color: #0f0f0f99;
   padding-bottom: 10px;
   margin-bottom: 30px;
   border-bottom: 1px dashed #7e7d7d99;
@@ -46,7 +60,7 @@
 .booking_container button {
   width: 100%;
   padding: 10px 0;
-  color: #FF0000;
+  color: #ff0000;
   cursor: pointer;
   font-size: 18px;
   border-radius: 99px;
