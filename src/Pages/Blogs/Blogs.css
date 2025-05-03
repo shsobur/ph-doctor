@@ -1,0 +1,26 @@
+.main_blog_container {
+  max-width: 1536px;
+  margin: auto;
+  padding: 100px 10px;
+}
+
+.blog_card {
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 50px;
+  background-color: #f1f0f0;
+}
+
+.blog_card h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.blog_card p {
+  font-size: 18px;
+  color: #4d4c4c;
+  padding: 20px 0;
+  border-top: 2px dashed #626263;
+  border-bottom: 2px dashed #626263;
+}

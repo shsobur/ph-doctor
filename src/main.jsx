@@ -7,6 +7,7 @@ import DoctorDetails from "./Components/DoctorDetails/DoctorDetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePageLayout from "./Pages/Home/HomePageLayout/HomePageLayout";
 import BookingPageLayout from "./Pages/Bookings/BookingPageLayout/BookingPageLayout";
+import Blogs from "./Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/bookings",
         Component: BookingPageLayout,
+      },
+      {
+        path: "/blogs",
+        Component: Blogs,
       },
       {
         path: "/doctorDetails/:id",
