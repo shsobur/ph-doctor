@@ -41,7 +41,7 @@ const AllBooking = () => {
   return (
     <>
       <section id="booking_section">
-        {bookingData === null ? (
+        {bookingData === null || bookingData.length === 0 ? (
           <div className="empty_booking_massage">
             <h1>No Booking!</h1>
           </div>
