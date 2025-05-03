@@ -1,6 +1,6 @@
 import "./DoctorDetails.css";
 import { LiaRegistered } from "react-icons/lia";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigate, useParams } from "react-router";
 import { handleBooking } from "../Booking/Booking";
 
 const DoctorDetails = () => {
@@ -9,6 +9,7 @@ const DoctorDetails = () => {
   const { id } = useParams();
   const intId = Number(id);
   const data = doctorData.find((doctor) => doctor.id === intId);
+  const navigate = useNavigate();
 
   const handleDoctorBookings = () => {
     const bookedDoctorData = {
@@ -18,7 +19,7 @@ const DoctorDetails = () => {
       education: data.education,
     };
 
-    handleBooking(bookedDoctorData);
+    handleBooking(bookedDoctorData, navigate);
   };
 
   return (

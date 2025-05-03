@@ -87,7 +87,7 @@
     "registration_number": "REG123462",
     "designation": "Experienced Neurologist with focus on neurological disorders like epilepsy, stroke, and Parkinson’s disease. Committed to comprehensive brain and nerve care for patients.",
     "workplace": "Neuro Life Clinic",
-    "fee": "1500",
+    "fee": "900",
     "availability": ["Sunday", "Tuesday", "Thursday"]
   },
   {
@@ -100,7 +100,7 @@
     "registration_number": "REG123463",
     "designation": "General Surgeon skilled in laparoscopic, gastrointestinal, and hernia surgeries. Dedicated to minimally invasive procedures ensuring faster recovery and better patient outcomes.",
     "workplace": "Metro Surgical Center",
-    "fee": "1400",
+    "fee": "600",
     "availability": ["Friday", "Wednesday", "Saturday"]
   },
   {
@@ -113,7 +113,7 @@
     "registration_number": "REG123464",
     "designation": "Eye Specialist providing treatments for cataract, glaucoma, and refractive errors. Focused on advanced surgical techniques and personalized eye care solutions.",
     "workplace": "Vision Eye Hospital",
-    "fee": "1100",
+    "fee": "800",
     "availability": ["Monday", "Thursday", "Sunday"]
   },
   {
@@ -126,7 +126,7 @@
     "registration_number": "REG123465",
     "designation": "Psychiatrist offering care for depression, anxiety, bipolar disorder, and emotional wellness. Strong focus on personalized therapy and medication management strategies.",
     "workplace": "MindCare Wellness Center",
-    "fee": "1300",
+    "fee": "500",
     "availability": ["Tuesday", "Friday", "Wednesday"]
   },
   {
@@ -139,7 +139,7 @@
     "registration_number": "REG123466",
     "designation": "Experienced Gynecologist specializing in pregnancy care, fertility treatments, and women’s health issues. Dedicated to providing compassionate and expert healthcare for women.",
     "workplace": "Women’s Health Hospital",
-    "fee": "1250",
+    "fee": "820",
     "availability": ["Saturday", "Monday", "Thursday"]
   },
   {
@@ -152,7 +152,7 @@
     "registration_number": "REG123467",
     "designation": "Oncologist with expertise in diagnosing and treating various types of cancer. Committed to delivering compassionate care and the latest cancer treatment options.",
     "workplace": "Hope Cancer Center",
-    "fee": "2000",
+    "fee": "100",
     "availability": ["Wednesday", "Sunday", "Friday"]
   }
 ]

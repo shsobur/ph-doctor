@@ -11,7 +11,7 @@ const handleExistBooking = () => {
   return bookings;
 };
 
-const handleBooking = (bookingDoctorData) => {
+const handleBooking = (bookingDoctorData, navigate) => {
   const bookingData = handleExistBooking();
   console.log(bookingData);
 
@@ -57,6 +57,8 @@ const handleBooking = (bookingDoctorData) => {
     icon: "success",
     title: "Booked successfully",
   });
+
+  navigate("/bookings");
 };
 
 const handleDeleteBooking = (id) => {
