@@ -14,7 +14,6 @@ const Footer = () => {
       <footer>
         <div className="main_footer_section_outer_container">
           <div className="main_footer_section_inner_container">
-            
             <div className="footer_content_top_container">
               <div id="footer_box-1" className="main_footer_title_container">
                 <div className="footer_main_title_container">
@@ -30,16 +29,30 @@ const Footer = () => {
 
                 <div className="footer_social_icon">
                   <h4>
-                    <CiFacebook />
+                    <a href="https://www.facebook.com/zuck" target="main">
+                      <CiFacebook />
+                    </a>
                   </h4>
                   <h4>
-                    <CiLinkedin />
+                    <a
+                      href="https://www.linkedin.com/in/ryanroslansky/"
+                      target="main"
+                    >
+                      <CiLinkedin />
+                    </a>
                   </h4>
                   <h4>
-                    <CiInstagram />
+                    <a
+                      href="https://www.instagram.com/kevin/?hl=en"
+                      target="main"
+                    >
+                      <CiInstagram />
+                    </a>
                   </h4>
                   <h4>
-                    <CiTwitter />
+                    <a href="https://x.com/kevin" target="main">
+                      <CiTwitter />
+                    </a>
                   </h4>
                 </div>
               </div>
@@ -94,7 +107,6 @@ const Footer = () => {
                 Terms Of Use <span className="pl-5 pr-5">|</span> Privacy Policy
               </div>
             </div>
-
           </div>
         </div>
       </footer>
